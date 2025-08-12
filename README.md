@@ -17,7 +17,7 @@ React.js ve Vite kullanılarak geliştirilmiş olup, kullanıcıların yazılı 
 - 🎨 **Tema değiştirici** – Açık/Koyu mod desteği, yazı renkleriyle uyumlu
 - ➕ **Yeni sohbet başlatma** özelliği
 - 📜 **Sohbet geçmişi kaydı**
-- ⬇️ **Sohbetleri indirme** (JSON formatında)
+- ⬇️ **Sohbetleri indirme** (PDF formatında)
 - 🔄 **Responsive tasarım** – Mobil ve masaüstü uyumlu
 - ✨ **Markdown & Kod bloğu desteği**
 - ⏳ **Yazım sırasında "typing" animasyonu**
