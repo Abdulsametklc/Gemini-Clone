@@ -8,7 +8,7 @@ React.js ve Vite kullanılarak geliştirilmiş olup, kullanıcıların yazılı 
 ---
 
 ## 🚀 Canlı Demo
-🔗 [Projeyi Görüntüle](https://kullaniciadi.github.io/gemini_clone.github.io)
+🔗 [Projeyi Görüntüle](https://abdulsametkilic.github.io/gemini_clone)
 
 ---
 
