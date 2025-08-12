@@ -1,0 +1,328 @@
+.main{
+  flex: 1;
+  min-height: 100vh;
+  position: relative;
+  display: flex;               
+  flex-direction: column;
+}
+
+.main .nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 22px;
+  padding: 20px;
+  color:#585858;
+}
+
+.main .nav img{
+  width: 40px;
+  border-radius: 50%;
+}
+
+.main-container{
+  max-width: 900px;
+  margin: auto;
+  width: 100%;             
+  flex: 1;                 
+  display: flex;              
+  flex-direction: column; 
+}
+
+.main .greet{
+  margin: 50px 0px;
+  font-size: 56px;
+  color: #c4c7c5;
+  padding: 20px;
+}
+
+.main .greet span{
+  background: -webkit-linear-gradient(16deg, #4b90ff, #ff5546);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main .cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 15px;
+  padding: 20px;
+}
+
+.main .card{
+  height: 200px;
+  padding: 15px;
+  background-color: #f0f4f9;
+  border-radius: 10px;
+  position: relative;
+  cursor: pointer;
+  color: #585858;
+  font-size: 17px;
+}
+
+.main .card img{
+  width: 35px;
+  padding: 5px;
+  position: absolute;
+  background-color: white;
+  border-radius: 20px;
+  bottom: 10px;
+  right: 10px;
+}
+
+.main .card:hover{
+  background-color: #dfe4ea;
+}
+
+.main-bottom{
+position: sticky;            
+  bottom: 0;
+  width: 100%;
+  max-width: 900px;
+  padding: 0 20px 8px;         
+  margin: 0 auto;
+  background: #fff;
+}
+
+.search-box{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #f0f4f9;
+  padding: 10px 20px;
+  border-radius: 50px;
+}
+
+.search-box img{
+  width: 24px;
+  cursor: pointer;
+}
+
+.search-box input{
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.search-box div{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.main .bottom-info{
+  font-size: 13px;
+  margin: 15px auto;
+  text-align: center;
+  font-weight: 300;
+}
+
+/* --- Chat layout (şeffaf, çizgisiz, modern scroll) --- */
+.chat-box{
+  /* kutu hissi yok */
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+
+  /* yerleşim */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  /* aradaki boşluğu kaldırdık */
+  margin: 10px 20px 0;
+  flex: 1;
+  max-height: calc(100vh - 200px); /* başlık ve input için alan bırak */
+  overflow-y: auto;
+
+}
+
+/* scrollbar gizle (kaydırma devam) */
+.chat-box::-webkit-scrollbar{ width: 0; height: 0; }
+.chat-box{ scrollbar-width: none; }
+
+.chat-message{
+  max-width: 75%;
+  padding: 10px 14px;
+  border-radius: 18px;
+  font-size: 16px;
+  line-height: 1.45;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* Markdown içerik düzeni */
+.chat-message p {
+  margin: 6px 0;
+  line-height: 1.5;
+}
+
+.chat-message h2, .chat-message h3 {
+  margin: 10px 0 6px;
+  font-weight: bold;
+  color: #333;
+}
+
+.chat-message ul, .chat-message ol {
+  margin: 6px 0 6px 20px;
+}
+
+.chat-message strong {
+  font-weight: bold;
+}
+
+/* kullanıcı — sağ */
+.user-message{
+  align-self: flex-end;
+  background: #4b90ff;
+  color: #fff;
+  border-bottom-right-radius: 6px;
+}
+
+/* ai — sol */
+.ai-message{
+  align-self: flex-start;
+  background: #e7ebf0;
+  color: #222;
+  border-bottom-left-radius: 6px;
+}
+
+/* Yazıyor... animasyonu */
+.typing {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.typing span {
+  width: 6px;
+  height: 6px;
+  background: #555;
+  border-radius: 50%;
+  display: inline-block;
+  animation: blink 1.4s infinite ease-in-out;
+}
+
+.typing span:nth-child(2) { animation-delay: 0.2s; }
+.typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes blink {
+  0%, 80%, 100% { opacity: 0.3; transform: translateY(0); }
+  40% { opacity: 1; transform: translateY(-3px); }
+}
+
+/* küçük ekran iyileştirme */
+@media (max-width: 640px){
+  .chat-message{ max-width: 90%; font-size: 15px; }
+  .chat-box{ margin: 10px 12px 0; max-height: calc(100vh - 180px); }
+}
+
+/* --- Tema: ortak küçük düzen --- */
+.nav .nav-right{
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.theme-toggle{
+  border: 1px solid #e3e3e3;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 6px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.theme-toggle:hover{
+  filter: brightness(0.97);
+}
+
+/* === DARK THEME OVERRIDES === */
+[data-theme="dark"] body{
+  background: #0b1220;     /* sayfa arkası */
+  color: #e5e7eb;          /* genel metin */
+}
+
+[data-theme="dark"] .main .nav{
+  color: #e5e7eb;
+}
+
+[data-theme="dark"] .main .greet{
+  color: #94a3b8;  /* açılış metni */
+}
+
+[data-theme="dark"] .main .cards .card{
+  background-color: #111827;
+  color: #e5e7eb;
+}
+[data-theme="dark"] .main .card:hover{
+  background-color: #1f2937;
+}
+
+[data-theme="dark"] .search-box{
+  background-color: #0f172a;
+  border: 1px solid #1f2937;
+}
+[data-theme="dark"] .search-box input{
+  color: #e5e7eb;
+}
+[data-theme="dark"] .search-box img{
+  filter: invert(0.85); /* ikonlar açık görünsün */
+}
+
+[data-theme="dark"] .main .bottom-info{
+  color: #94a3b8;
+}
+
+/* Chat balonları */
+[data-theme="dark"] .ai-message{
+  background: #111827;
+  color: #e5e7eb;
+}
+[data-theme="dark"] .user-message{
+  /* kullanıcı balonu mavi kalsın; istersen koyulaştırabilirsin */
+  background: #3b82f6; /* #4b90ff yerine daha koyu bir mavi */
+  color: #fff;
+}
+
+/* Navbar buton/ikonları */
+[data-theme="dark"] .theme-toggle{
+  background: #0f172a;
+  border-color: #1f2937;
+  color: #e5e7eb;
+}
+[data-theme="dark"] .nav img{
+  /* profil ikonu açık görünmüyorsa aç: */
+  filter: brightness(0.9);
+}
+
+/* Kart ve chat kutusunda link/strong başlıklar */
+[data-theme="dark"] .chat-message h2,
+[data-theme="dark"] .chat-message h3{
+  color: #e5e7eb;
+}
+/* ==== DARK THEME — FOOTER / INPUT BAR ==== */
+[data-theme="dark"] .main-bottom{
+  background: #0b1220;                /* footer zemini koyu */
+  box-shadow: 0 -6px 12px -12px rgba(0,0,0,0.6); /* hafif ayrım */
+}
+
+/* Zaten search-box için dark vardı; yine de ek güçlendirme */
+[data-theme="dark"] .search-box{
+  background-color: #0f172a;
+  border: 1px solid #1f2937;
+}
+[data-theme="dark"] .search-box input{
+  color: #e5e7eb;
+}
+[data-theme="dark"] .search-box img{
+  filter: invert(0.85);
+}
+
+/* Alt bilgi metni */
+[data-theme="dark"] .main .bottom-info{
+  color: #94a3b8;
+}

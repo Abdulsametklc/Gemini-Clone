@@ -1,0 +1,215 @@
+.sidebar {
+    min-height: 100vh;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #f0f4f9;
+    padding: 25px 15px;
+}
+
+.sidebar img {
+    width: 20px;
+}
+
+.sidebar .menu {
+    display: block;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.sidebar .new-chat {
+    margin-top: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    background-color: #e6eaf1;
+    border-radius: 50px;
+    font-size: 14px;
+    color: grey;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.sidebar .new-chat:hover {
+    background-color: rgba(75, 144, 255, 0.15);
+    transform: translateY(-1px);
+}
+
+.sidebar .recent {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .recent-title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.sidebar .recent-entry {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 12px;
+    color: #282828;
+    cursor: pointer;
+    position: relative;
+}
+
+.sidebar .recent-entry:hover {
+    background-color: #e2e6eb;
+}
+
+.sidebar .recent-title-text {
+    flex: 1;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+/* Üç nokta butonu */
+.kebab-btn {
+    background: none;
+    border: none;
+    font-size: 18px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
+}
+
+.kebab-btn:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+/* Menü */
+.recent-menu {
+    position: absolute;
+    right: 0;
+    top: 36px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    min-width: 140px;
+    padding: 4px 0;
+}
+
+.recent-menu button {
+    background: none;
+    border: none;
+    padding: 8px 12px;
+    text-align: left;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+}
+
+.recent-menu button:hover {
+    background-color: #f5f5f5;
+}
+
+.recent-menu .danger {
+    color: #d93025;
+}
+
+.sidebar .bottom {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar .bottom-item {
+  padding-right: 10px;
+  cursor: pointer;
+  position: relative;
+}
+
+.sidebar .bottom-item .tooltip {
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 4px 8px;
+  border-radius: 5px;
+  position: absolute;
+  left: 110%;
+  top: 50%;
+  transform: translateY(-50%);
+  white-space: nowrap;
+  transition: opacity 0.2s ease, visibility 0.2s ease;
+  font-size: 12px;
+}
+
+.sidebar .bottom-item:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
+/* ==== DARK THEME — SIDEBAR ==== */
+[data-theme="dark"] .sidebar{
+  background-color: #0f172a;          /* koyu lacivert */
+}
+
+[data-theme="dark"] .sidebar img{
+  filter: brightness(0.9);            /* ikonlar çok kararmasın */
+}
+
+/* New Chat */
+[data-theme="dark"] .sidebar .new-chat{
+  background-color: #111827;
+  color: #cbd5e1;
+}
+[data-theme="dark"] .sidebar .new-chat:hover{
+  background-color: #1f2937;
+}
+
+/* Recent başlık ve satırlar */
+[data-theme="dark"] .sidebar .recent-title{
+  color: #cbd5e1;
+}
+[data-theme="dark"] .sidebar .recent-entry{
+  color: #e5e7eb;
+}
+[data-theme="dark"] .sidebar .recent-entry:hover{
+  background-color: #1f2937;
+}
+
+/* Üç nokta (kebab) butonu */
+[data-theme="dark"] .kebab-btn{
+  color: #e5e7eb;
+}
+[data-theme="dark"] .kebab-btn:hover{
+  background-color: #1f2937;
+  color: #fff;
+}
+
+/* Açılır menü */
+[data-theme="dark"] .recent-menu{
+  background: #0b1220;
+  border: 1px solid #1f2937;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+[data-theme="dark"] .recent-menu button{
+  color: #e5e7eb;
+}
+[data-theme="dark"] .recent-menu button:hover{
+  background: #111827;
+}
+[data-theme="dark"] .recent-menu .danger{
+  color: #f87171;
+}
+[data-theme="dark"] .recent-menu .danger:hover{
+  background: rgba(248,113,113,0.12);
+}
+
+/* Bottom bölüm yazıları */
+[data-theme="dark"] .sidebar .bottom-item{
+  color: #e5e7eb;
+}
