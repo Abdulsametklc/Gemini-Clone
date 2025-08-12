@@ -39,5 +39,5 @@ React.js ve Vite kullanılarak geliştirilmiş olup, kullanıcıların yazılı 
 
 1. **Projeyi klonla**
 ```bash
-git clone https://github.com/kullaniciadi/gemini_clone.github.io.git
-cd gemini_clone.github.io
+git clone https://github.com/Abdulsametklc/gemini_clone.git
+cd gemini_clone
