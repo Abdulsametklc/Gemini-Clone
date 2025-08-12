@@ -59,7 +59,8 @@ npm run dev
 ```
 
 ## 📂 Kurulum ve Çalıştırma
-- V1 sürümü temel özellikleri içerir, sonraki versiyonlarda:
+
+V1 sürümü temel özellikleri içerir, sonraki versiyonlarda:
 
 - PDF olarak sohbet indirme
 
