@@ -1,12 +1,43 @@
-# React + Vite
+# Gemini Clone (v1)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bu proje, **Google Gemini** yapay zeka modelinin web tabanlı bir klonudur.  
+React.js ve Vite kullanılarak geliştirilmiş olup, kullanıcıların yazılı sorulara yanıt alabileceği modern ve hızlı bir sohbet arayüzü sunar.
 
-Currently, two official plugins are available:
+> **Sürüm Notu:** Bu proje **v1** sürümüdür. İlerleyen versiyonlarda yeni özellikler, geliştirmeler ve optimizasyonlar eklenecektir.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Canlı Demo
+🔗 [Projeyi Görüntüle](https://kullaniciadi.github.io/gemini_clone.github.io)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📌 Özellikler
+- 💬 **Gerçek zamanlı sohbet** – Google Gemini API ile AI yanıtları
+- 🎨 **Tema değiştirici** – Açık/Koyu mod desteği, yazı renkleriyle uyumlu
+- ➕ **Yeni sohbet başlatma** özelliği
+- 📜 **Sohbet geçmişi kaydı**
+- ⬇️ **Sohbetleri indirme** (JSON formatında)
+- 🔄 **Responsive tasarım** – Mobil ve masaüstü uyumlu
+- ✨ **Markdown & Kod bloğu desteği**
+- ⏳ **Yazım sırasında "typing" animasyonu**
+- 📝 **500 karakter sınırı** ve anlık kalan karakter gösterimi
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+- **Frontend:** [React.js](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Stil:** CSS, Responsive Tasarım
+- **Markdown Render:** [React Markdown](https://github.com/remarkjs/react-markdown)
+- **Kod Renklendirme:** [react-syntax-highlighter](https://github.com/react-syntax-highlighter/react-syntax-highlighter)
+- **API:** [Google Gemini API](https://ai.google.dev/)
+- **Dağıtım:** [GitHub Pages](https://pages.github.com/)
+
+---
+
+## 📂 Kurulum ve Çalıştırma
+
+1. **Projeyi klonla**
+```bash
+git clone https://github.com/kullaniciadi/gemini_clone.github.io.git
+cd gemini_clone.github.io
