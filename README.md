@@ -41,3 +41,30 @@ React.js ve Vite kullanılarak geliştirilmiş olup, kullanıcıların yazılı 
 ```bash
 git clone https://github.com/Abdulsametklc/gemini_clone.git
 cd gemini_clone
+```
+
+2. **Gerekli bağımlılıkları yükle**
+```bash
+npm install
+```
+
+3. **.env dosyasına API anahtarını ekle**
+```bash
+VITE_GEMINI_API_KEY=your_api_key_here
+```
+
+4. **Geliştirme ortamında çalıştır**
+```bash
+npm run dev
+```
+
+## 📂 Kurulum ve Çalıştırma
+-- **V1 sürümü temel özellikleri içerir, sonraki versiyonlarda:
+
+-- **PDF olarak sohbet indirme
+
+-- **Gelişmiş sohbet geçmişi filtreleme
+
+-- **Google ile giriş yapma
+
+-- **Kullanıcı profili yönetimigibi eklemeler yapılacaktır.
