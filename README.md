@@ -57,15 +57,3 @@ VITE_GEMINI_API_KEY=your_api_key_here
 ```bash
 npm run dev
 ```
-
-## 📂 Kurulum ve Çalıştırma
-
-V1 sürümü temel özellikleri içerir, sonraki versiyonlarda:
-
-- PDF olarak sohbet indirme
-
-- Gelişmiş sohbet geçmişi filtreleme
-
-- Google ile giriş yapma
-
-- Kullanıcı profili yönetimigibi eklemeler yapılacaktır.
