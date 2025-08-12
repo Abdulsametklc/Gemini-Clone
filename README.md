@@ -59,12 +59,12 @@ npm run dev
 ```
 
 ## 📂 Kurulum ve Çalıştırma
--- V1 sürümü temel özellikleri içerir, sonraki versiyonlarda:
+- V1 sürümü temel özellikleri içerir, sonraki versiyonlarda:
 
--- PDF olarak sohbet indirme
+- PDF olarak sohbet indirme
 
--- Gelişmiş sohbet geçmişi filtreleme
+- Gelişmiş sohbet geçmişi filtreleme
 
--- Google ile giriş yapma
+- Google ile giriş yapma
 
--- Kullanıcı profili yönetimigibi eklemeler yapılacaktır.
+- Kullanıcı profili yönetimigibi eklemeler yapılacaktır.
